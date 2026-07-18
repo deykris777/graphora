@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Theme Variables ───────────────────────────────── */
+:root {
+  color-scheme: light;
+
+  --bg-base: #FAF9F6;
+  --bg-surface: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F5F4F0;
+  --bg-sidebar: #FAF9F6;
+
+  --text-heading: #050505;
+  --text-body: #1A1A1A;
+  --text-muted: #555555;
+  --text-faint: #888888;
+
+  --accent: #FF6B35;
+  --accent-secondary: #006064;
+  --accent-bg: rgba(255, 107, 53, 0.06);
+  --accent-bg-hover: rgba(255, 107, 53, 0.12);
+  --accent-border: rgba(255, 107, 53, 0.18);
+
+  --border: rgba(0, 0, 0, 0.06);
+  --border-hover: rgba(0, 0, 0, 0.12);
+
+  --badge-success-bg: rgba(0, 96, 100, 0.08);
+  --badge-success-text: #006064;
+  --badge-success-border: rgba(0, 96, 100, 0.15);
+  --badge-error-bg: rgba(255, 107, 53, 0.08);
+  --badge-error-text: #FF6B35;
+  --badge-error-border: rgba(255, 107, 53, 0.15);
+
+  --chart-stroke: #FF6B35;
+  --chart-fill-start: rgba(255, 107, 53, 0.15);
+  --chart-fill-end: rgba(255, 107, 53, 0);
+  --chart-grid: rgba(0, 0, 0, 0.03);
+
+  --glow: rgba(0, 0, 0, 0.02);
+  --scrollbar: rgba(0, 0, 0, 0.08);
+  --scrollbar-hover: rgba(0, 0, 0, 0.15);
+  --selection-bg: rgba(255, 107, 53, 0.15);
+  --selection-text: #050505;
+
+  --pulse-dot: #FF6B35;
+}
+
+.dark {
+  color-scheme: dark;
+
+  --bg-base: #050505;
+  --bg-surface: #0D0D0D;
+  --bg-card: #0D0D0D;
+  --bg-card-hover: #141414;
+  --bg-sidebar: #050505;
+
+  --text-heading: #FFFFFF;
+  --text-body: rgba(255, 255, 255, 0.9);
+  --text-muted: rgba(255, 255, 255, 0.6);
+  --text-faint: rgba(255, 255, 255, 0.35);
+
+  --accent: #FF6B35;
+  --accent-secondary: #E0F7FA;
+  --accent-bg: rgba(255, 107, 53, 0.05);
+  --accent-bg-hover: rgba(255, 107, 53, 0.1);
+  --accent-border: rgba(255, 107, 53, 0.2);
+
+  --border: rgba(255, 255, 255, 0.04);
+  --border-hover: rgba(255, 255, 255, 0.09);
+
+  --badge-success-bg: rgba(224, 247, 250, 0.08);
+  --badge-success-text: #E0F7FA;
+  --badge-success-border: rgba(224, 247, 250, 0.15);
+  --badge-error-bg: rgba(255, 107, 53, 0.08);
+  --badge-error-text: #FF6B35;
+  --badge-error-border: rgba(255, 107, 53, 0.15);
+
+  --chart-stroke: #FF6B35;
+  --chart-fill-start: rgba(255, 107, 53, 0.15);
+  --chart-fill-end: rgba(255, 107, 53, 0);
+  --chart-grid: rgba(255, 255, 255, 0.03);
+
+  --glow: rgba(224, 247, 250, 0.02);
+  --scrollbar: rgba(255, 255, 255, 0.08);
+  --scrollbar-hover: rgba(255, 255, 255, 0.15);
+  --selection-bg: rgba(255, 107, 53, 0.2);
+  --selection-text: #FFFFFF;
+
+  --pulse-dot: #FF6B35;
+}
+
+/* ── Global Styles ─────────────────────────────────── */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--bg-base);
+  color: var(--text-body);
+  transition: background-color 300ms cubic-bezier(0.25, 1, 0.5, 1), color 300ms cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Plus Jakarta Sans", "Inter", sans-serif;
+  letter-spacing: -0.02em;
+}
+
+::-webkit-scrollbar { width: 5px; height: 5px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--scrollbar); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-hover); }
+
+::selection {
+  background-color: var(--selection-bg);
+  color: var(--selection-text);
+}
