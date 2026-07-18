@@ -16,7 +16,7 @@ export const createApp = () => {
   app.use(express.json({ limit: "2mb" }));
 
   app.get("/health", (_req, res) => {
-    res.json({ status: "ok", name: "graphyn" });
+    res.json({ status: "ok", name: "graphora" });
   });
 
   app.use("/api", apiRoutes);

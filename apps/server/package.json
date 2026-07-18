@@ -1,5 +1,5 @@
 {
-  "name": "graphyn-server",
+  "name": "graphora-server",
   "version": "1.0.0",
   "private": true,
   "type": "commonjs",

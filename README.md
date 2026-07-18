@@ -1,8 +1,8 @@
-# Graphyn
+# Graphora
 
-Graphyn is a realtime API traffic visualizer and observability platform. It ingests trace-span events from your services, stores them in MongoDB, aggregates metrics, and streams live updates to the web UI via Socket.io.
+Graphora is a realtime API traffic visualizer and observability platform. It ingests trace-span events from your services, stores them in MongoDB, aggregates metrics, and streams live updates to the web UI via Socket.io.
 
-## What Graphyn Tracks
+## What Graphora Tracks
 
 - Traces: span-by-span timelines for a request flow
 - Services: per-service request counts, errors, and latency stats
@@ -87,7 +87,7 @@ Build it with:
 Usage (set baseUrl to your backend):
 
 ```ts
-import { createClient } from "@graphyn/sdk";
+import { createClient } from "@graphora/sdk";
 
 const client = createClient({
   baseUrl: "http://localhost:4000",

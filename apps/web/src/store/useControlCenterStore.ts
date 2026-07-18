@@ -25,7 +25,7 @@ const hexKey = () =>
     Math.floor(Math.random() * 16).toString(16)
   ).join("")}`;
 
-const STORAGE_KEY = "graphyn-control-center";
+const STORAGE_KEY = "graphora-control-center";
 
 // ── Persisted State Shape ────────────────────────────
 

@@ -13,13 +13,13 @@ const start = async () => {
   app.get("/", (req, res) => {
     res.json({
       status: "ok",
-      service: "Graphyn"
+      service: "Graphora"
     });
   });
 
   server.listen(env.port, () => {
     // eslint-disable-next-line no-console
-    console.log(`Graphyn server running on port ${env.port}`);
+    console.log(`Graphora server running on port ${env.port}`);
   });
 };
 
