@@ -21,7 +21,9 @@ export const initSocket = (server: HttpServer) => {
     cors: {
       origin: env.corsOrigin,
       credentials: true
-    }
+    },
+    // Use polling for Vercel serverless compatibility
+    transports: ["polling", "websocket"]
   });
 
   io.on("connection", (socket) => {
