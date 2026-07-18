@@ -24,7 +24,7 @@ export const Sidebar = () => {
         <div className="h-6 w-6 rounded flex items-center justify-center flex-shrink-0" style={{ backgroundColor: 'var(--accent)' }}>
           <span className="text-xs font-black text-black">G</span>
         </div>
-        <span className="text-sm font-bold tracking-widest uppercase font-mono" style={{ color: 'var(--text-heading)' }}>Graphyn</span>
+        <span className="text-sm font-bold tracking-widest uppercase font-mono" style={{ color: 'var(--text-heading)' }}>Graphora</span>
       </div>
 
       <nav className="flex-1 space-y-1.5">
