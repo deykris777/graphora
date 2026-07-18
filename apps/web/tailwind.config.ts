@@ -18,7 +18,7 @@ export default {
           text: "#FFFFFF",
           muted: "rgba(255, 255, 255, 0.7)",
         },
-        graphyn: {
+        graphora: {
           ink: "#050505",
           slate: "#0D0D0D",
           mist: "#E0F7FA",
