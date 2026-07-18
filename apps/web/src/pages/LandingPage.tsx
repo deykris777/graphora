@@ -402,7 +402,7 @@ export const LandingPage = () => {
             <div className="h-7 w-7 rounded-md bg-brand-primary flex items-center justify-center shadow-[0_0_15px_rgba(255,107,53,0.3)]">
               <span className="text-brand-void text-xs font-black">G</span>
             </div>
-            <span className="text-base font-semibold tracking-widest uppercase text-white font-mono">Graphyn</span>
+            <span className="text-base font-semibold tracking-widest uppercase text-white font-mono">Graphora</span>
           </div>
 
           <div className="hidden md:flex items-center gap-8 text-[11px] font-mono tracking-widest text-white/50 uppercase">
@@ -564,7 +564,7 @@ export const LandingPage = () => {
 
         {/* ─── Minimal Footer ─── */}
         <footer className="border-t border-white/5 pt-8 pb-12 flex flex-col sm:flex-row items-center justify-between text-[10px] text-white/30 font-mono tracking-widest uppercase gap-4">
-          <div>© 2026 Graphyn Corp. All rights reserved.</div>
+          <div>© 2026 Graphora Corp. All rights reserved.</div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-white transition-colors">terms</a>
             <a href="#" className="hover:text-white transition-colors">privacy</a>
